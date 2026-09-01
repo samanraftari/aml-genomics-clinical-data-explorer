@@ -1,0 +1,13 @@
+variant_classification,variant_count
+Missense_Mutation,1433
+Silent,472
+RNA,140
+Nonsense_Mutation,119
+Frame_Shift_Ins,118
+Frame_Shift_Del,52
+Splice_Site,51
+In_Frame_Ins,39
+Intron,37
+Splice_Region,18
+3'Flank,12
+In_Frame_Del,11
