@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Saman Raftari, a molecular genetics and clinical diagnostics professional developing projects in Python, machine learning, bioinformatics and healthcare data.">
+  <meta name="theme-color" content="#f6f1e8">
+  <title>Saman Raftari | Molecular Genetics, Clinical Diagnostics & Health AI</title>
+  <meta name="author" content="Saman Raftari">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://samanraftari.github.io/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Saman Raftari | Molecular Genetics, Clinical Diagnostics & HEALTH DATA & AI">
+<meta property="og:description" content="Explore projects connecting molecular genetics and clinical diagnostics with Python, machine learning, bioinformatics and healthcare data.">
+<meta property="og:url" content="https://samanraftari.github.io/">
+<meta property="og:site_name" content="Saman Raftari">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Saman Raftari | Molecular Genetics, Clinical Diagnostics & HEALTH DATA & AI">
+<meta name="twitter:description" content="Projects connecting molecular genetics and clinical diagnostics with Python, machine learning, bioinformatics and healthcare data.">
+  
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Saman Raftari",
+  "url": "https://samanraftari.github.io/",
+  "sameAs": [
+    "https://github.com/samanraftari",
+    "https://www.linkedin.com/in/saman-raftari-09a23480"
+  ],
+  "jobTitle": "Clinical Applications and Molecular Diagnostics Professional",
+  "knowsAbout": [
+    "Molecular Genetics",
+    "Clinical Diagnostics",
+    "Cytogenetics",
+    "Health Informatics",
+    "AI in Healthcare",
+    "Python",
+    "Machine Learning"
+  ]
+}
+</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ivory: #f6f1e8;
+      --paper: #fffdf8;
+      --ink: #10253e;
+      --muted: #5e6b73;
+      --teal: #087f75;
+      --teal-dark: #06675f;
+      --mint: #ddecdf;
+      --coral: #e77961;
+      --sand: #d8d0c3;
+      --max: 1180px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--ivory);
+      font-family: Inter, system-ui, sans-serif;
+      line-height: 1.65;
+    }
+    a { color: inherit; }
+    .skip {
+      position: absolute; left: -9999px; top: 0;
+      background: var(--ink); color: white; padding: .7rem 1rem; z-index: 100;
+    }
+    .skip:focus { left: 1rem; top: 1rem; }
+    .wrap { width: min(calc(100% - 40px), var(--max)); margin-inline: auto; }
+    header {
+      position: sticky; top: 0; z-index: 20;
+      background: color-mix(in srgb, var(--ivory) 91%, transparent);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid color-mix(in srgb, var(--sand) 70%, transparent);
+    }
+    nav {
+      min-height: 82px; display: flex; align-items: center;
+      justify-content: space-between; gap: 24px;
+    }
+    .brand { text-decoration: none; font-weight: 700; font-size: 1.08rem; letter-spacing: -.02em; }
+    .brand span { color: var(--teal); }
+    .nav-links { display: flex; gap: 28px; align-items: center; }
+    .nav-links a {
+      text-decoration: none; font-size: .9rem; font-weight: 600;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: ""; position: absolute; left: 0; right: 100%; bottom: -6px;
+      height: 2px; background: var(--coral); transition: right .2s ease;
+    }
+    .nav-links a:hover::after, .nav-links a:focus-visible::after { right: 0; }
+    .hero {
+      min-height: calc(100vh - 82px);
+      display: grid; grid-template-columns: 1.1fr .9fr; align-items: center;
+      gap: clamp(40px, 7vw, 100px); padding-block: 76px 54px;
+    }
+    .eyebrow {
+      color: var(--teal); font-weight: 700; text-transform: uppercase;
+      letter-spacing: .13em; font-size: .76rem;
+    }
+    h1, h2 { font-family: "DM Serif Display", Georgia, serif; font-weight: 400; }
+    h1 {
+      max-width: 760px; margin: 18px 0 24px;
+      font-size: clamp(2.65rem, 4.7vw, 4.9rem);
+      line-height: 1.03; letter-spacing: -.035em;
+    }
+    h1 em { color: var(--teal); font-style: normal; }
+    .intro { max-width: 680px; color: var(--muted); font-size: clamp(1.02rem, 1.35vw, 1.22rem); }
+    .actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 50px; padding: 0 22px; border-radius: 999px;
+      text-decoration: none; font-weight: 700; font-size: .92rem;
+      border: 1px solid var(--ink); transition: .2s ease;
+    }
+    .button.primary { color: white; background: var(--teal); border-color: var(--teal); }
+    .button.primary:hover { background: var(--teal-dark); transform: translateY(-2px); }
+    .button.secondary:hover { background: var(--mint); transform: translateY(-2px); }
+    .science-art {
+      position: relative; min-height: 520px; overflow: hidden;
+      background:
+        linear-gradient(rgba(8,127,117,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(8,127,117,.055) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+    .helix {
+      position: absolute; width: 150px; height: 335px; left: 29%; top: 38%;
+      transform: translate(-50%, -50%) rotate(-6deg);
+    }
+    .helix::before, .helix::after {
+      content: ""; position: absolute; inset: 0;
+      border: 3px solid var(--teal); border-top-color: transparent;
+      border-bottom-color: transparent; border-radius: 50%;
+      transform: skewY(-18deg);
+    }
+    .helix::after { border-color: var(--coral); border-top-color: transparent; border-bottom-color: transparent; transform: skewY(18deg); }
+    .rung {
+      position: absolute; left: 22px; width: 106px; height: 1px;
+      background: color-mix(in srgb, var(--ink) 38%, transparent);
+      transform: rotate(var(--angle));
+    }
+    .r1 { top: 54px; --angle: 12deg; } .r2 { top: 103px; --angle: -9deg; }
+    .r3 { top: 157px; --angle: 8deg; } .r4 { top: 213px; --angle: -11deg; }
+    .r5 { top: 274px; --angle: 10deg; }
+    .data-card {
+      position: absolute; background: rgba(255,253,248,.88); border: 1px solid var(--sand);
+      border-radius: 14px; padding: 14px 16px; box-shadow: 0 12px 30px rgba(16,37,62,.08);
+      font-size: .72rem; color: var(--muted);
+    }
+    .data-card strong { display: block; color: var(--ink); font-size: .88rem; margin-bottom: 2px; }
+    .card-a { left: 12px; bottom: 95px; } .card-b { right: 8px; bottom: 6px; }
+    .coordinate { position: absolute; color: var(--teal); font-size: .7rem; letter-spacing: .12em; }
+    .co-a { right: 10px; top: 28px; } .co-b { left: 10px; bottom: 10px; }
+    .karyotype {
+      position: absolute; right: 2px; top: 105px; width: 58%;
+      display: flex; align-items: end; justify-content: space-between; gap: 5px;
+    }
+    .chromosome {
+      width: 13px; height: var(--h); position: relative; border: 1px solid #718095;
+      border-radius: 8px 8px 5px 5px;
+      background: repeating-linear-gradient(
+        to bottom,
+        #f9f6ed 0 7%,
+        #233c5a 7% 12%,
+        #e9e5da 12% 18%,
+        #66839a 18% 23%,
+        #fbf8f0 23% 34%,
+        #1c3452 34% 41%,
+        #f8f4e9 41% 52%,
+        #899baa 52% 58%,
+        #edf0ec 58% 72%,
+        #243c5b 72% 80%,
+        #f7f3e9 80% 100%
+      );
+    }
+    .chromosome::after {
+      content: attr(data-label); position: absolute; top: calc(100% + 8px); left: 50%;
+      transform: translateX(-50%); font: 600 .55rem Inter, sans-serif; color: var(--muted);
+    }
+    .variant-panel {
+      position: absolute; left: 36%; bottom: 13px; width: 29%; height: 105px;
+      display: grid; grid-template-columns: repeat(5,1fr); grid-template-rows: repeat(4,1fr);
+      gap: 3px; padding-top: 24px;
+    }
+    .variant-panel::before {
+      content: "VARIANT MATRIX"; position: absolute; top: 0; left: 0;
+      color: var(--teal); font: 700 .55rem Inter,sans-serif; letter-spacing: .08em;
+    }
+    .variant-panel i { background: rgba(8,127,117,.13); }
+    .variant-panel i:nth-child(3n) { background: rgba(8,127,117,.35); }
+    .variant-panel i:nth-child(7), .variant-panel i:nth-child(14) { background: rgba(231,121,97,.78); }
+    .signal-chart {
+      position: absolute; right: 0; bottom: 13px; width: 31%; height: 105px;
+      border-left: 1px solid var(--sand); border-bottom: 1px solid var(--sand);
+      background:
+        linear-gradient(rgba(8,127,117,.09) 1px, transparent 1px);
+      background-size: 100% 22px;
+    }
+    .signal-chart::before {
+      content: "CLINICAL SIGNAL"; position: absolute; top: -23px; left: 8px;
+      color: var(--teal); font: 700 .55rem Inter,sans-serif; letter-spacing: .08em;
+    }
+    .signal-line {
+      position: absolute; inset: 18px 6px 12px 8px;
+      clip-path: polygon(0 78%,8% 44%,16% 62%,24% 33%,32% 52%,40% 70%,49% 39%,58% 61%,67% 29%,76% 52%,86% 35%,100% 13%,100% 17%,86% 40%,76% 57%,67% 34%,58% 66%,49% 45%,40% 75%,32% 57%,24% 38%,16% 67%,8% 50%,0 84%);
+      background: var(--teal);
+    }
+    .proof {
+      grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid var(--sand); border-bottom: 1px solid var(--sand);
+      margin-top: 24px;
+    }
+    .proof div { padding: 24px 30px; }
+    .proof div + div { border-left: 1px solid var(--sand); }
+    .proof strong { display: block; font-family: "DM Serif Display", serif; font-size: 1.7rem; font-weight: 400; }
+    .proof span { color: var(--muted); font-size: .82rem; }
+    section { padding-block: 110px; }
+    .section-head { display: grid; grid-template-columns: .7fr 1.3fr; gap: 40px; margin-bottom: 52px; }
+    h2 { font-size: clamp(2.6rem, 5vw, 4.6rem); line-height: 1; letter-spacing: -.035em; margin: 0; }
+    .section-head p { color: var(--muted); max-width: 680px; margin: 6px 0 0; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card {
+      background: var(--paper); border: 1px solid var(--sand); border-radius: 20px;
+      padding: 30px; transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 18px 40px rgba(16,37,62,.08); }
+    .card .number { color: var(--coral); font-weight: 700; font-size: .76rem; letter-spacing: .1em; }
+    .card h3 { font-size: 1.18rem; margin: 18px 0 10px; }
+    .card p { color: var(--muted); font-size: .93rem; margin: 0; }
+    .experience { background: var(--ink); color: white; }
+    .experience .section-head p, .experience .timeline p { color: #bec8d1; }
+    .timeline { display: grid; gap: 0; }
+    .timeline article {
+      display: grid; grid-template-columns: 190px 1fr; gap: 40px;
+      padding: 34px 0; border-top: 1px solid rgba(255,255,255,.17);
+    }
+    .timeline time { color: #91bfb9; font-size: .86rem; font-weight: 600; }
+    .timeline h3 { margin: 0 0 8px; font-size: 1.25rem; }
+    .timeline p { max-width: 760px; margin: 0; }
+    .project {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 46px; align-items: center;
+      background: var(--mint); border-radius: 28px; padding: clamp(28px, 5vw, 64px);
+    }
+    .project-visual {
+      min-height: 330px; border-radius: 18px; padding: 24px;
+      color: white; background: var(--ink); position: relative; overflow: hidden;
+    }
+    .project-visual::before {
+      content: ""; position: absolute; width: 270px; height: 270px; border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.18); right: -40px; top: -50px;
+      box-shadow: 0 0 0 45px rgba(8,127,117,.18), 0 0 0 90px rgba(231,121,97,.08);
+    }
+    .metric { position: relative; margin-top: 88px; font: 400 4.4rem/1 "DM Serif Display", serif; }
+    .metric small { display: block; font: 500 .8rem/1.5 Inter, sans-serif; color: #c7d2dc; margin-top: 12px; }
+    .project h3 { font: 400 clamp(2rem,4vw,3.6rem)/1.05 "DM Serif Display", serif; margin: 10px 0 20px; }
+    .project p { color: var(--muted); }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 30px; }
+    .tag { border: 1px solid color-mix(in srgb, var(--teal) 35%, transparent); border-radius: 999px; padding: 7px 11px; font-size: .75rem; font-weight: 600; }
+    .research-list { display: grid; gap: 14px; }
+    .research-item {
+      display: grid; grid-template-columns: 130px 1fr auto; gap: 24px; align-items: center;
+      padding: 24px 0; border-top: 1px solid var(--sand);
+    }
+    .research-item small { color: var(--teal); font-weight: 700; }
+    .research-item h3 { margin: 0 0 5px; font-size: 1.03rem; }
+    .research-item p { margin: 0; color: var(--muted); font-size: .88rem; }
+    .research-item a { color: var(--teal); font-weight: 700; font-size: .86rem; }
+    .contact {
+      text-align: center; background: var(--coral); border-radius: 30px;
+      padding: clamp(55px, 9vw, 110px) 24px; margin-block: 90px;
+    }
+    .contact h2 { max-width: 850px; margin-inline: auto; }
+    .contact p { max-width: 620px; margin: 24px auto 30px; }
+    footer { border-top: 1px solid var(--sand); padding: 30px 0 44px; color: var(--muted); font-size: .83rem; }
+    footer .wrap { display: flex; justify-content: space-between; gap: 20px; }
+    :focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .hero, .section-head, .project { grid-template-columns: 1fr; }
+      .hero { padding-top: 60px; }
+      .science-art { min-height: 420px; }
+      .cards { grid-template-columns: 1fr; }
+      .proof { grid-template-columns: 1fr; }
+      .proof div + div { border-left: 0; border-top: 1px solid var(--sand); }
+      .timeline article { grid-template-columns: 1fr; gap: 8px; }
+      .research-item { grid-template-columns: 1fr; gap: 8px; }
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .hero-copy { animation: rise .65s ease both; }
+      .science-art { animation: rise .75s .1s ease both; }
+      @keyframes rise { from { opacity: 0; transform: translateY(18px); } }
+    }
+    .contact {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.contact p {
+  max-width: 720px;
+  margin: 0 auto 2rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.contact-email {
+  color: var(--teal);
+  text-decoration: none;
+  font-family: monospace;
+  letter-spacing: 0.03em;
+}
+
+.contact-email:hover {
+  text-decoration: underline;
+}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <nav class="wrap" aria-label="Main navigation">
+      <a class="brand" href="#top">Saman <span>Raftari</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="wrap hero" id="top">
+      <div class="hero-copy">
+        <div class="eyebrow">Molecular genetics × Clinical diagnostics × HEALTH DATA & AI</div>
+        <h1>Turning biological complexity into <em>clearer clinical insight.</em></h1>
+        <p class="intro">I’m Saman Raftari, a molecular genetics and clinical diagnostics professional with more than five years of industry experience, now developing Python, machine-learning and healthcare-data projects in cytogenetics and hematologic malignancies.</p>
+        <div class="actions">
+          <a class="button primary" href="#projects">Explore my work</a>
+          <a class="button secondary" href="#research">View research</a>
+        </div>
+      </div>
+      <div class="science-art" aria-label="Abstract cytogenetics and health-data illustration">
+        <span class="coordinate co-a">GRCh38 · chr17 · TP53</span>
+        <span class="coordinate co-b">SIGNAL / INSIGHT</span>
+        <div class="helix" aria-hidden="true">
+          <i class="rung r1"></i><i class="rung r2"></i><i class="rung r3"></i><i class="rung r4"></i><i class="rung r5"></i>
+        </div>
+        <div class="karyotype" aria-label="Stylized human chromosome panel">
+          <i class="chromosome" style="--h:90px" data-label="1"></i>
+          <i class="chromosome" style="--h:82px" data-label="2"></i>
+          <i class="chromosome" style="--h:76px" data-label="3"></i>
+          <i class="chromosome" style="--h:72px" data-label="4"></i>
+          <i class="chromosome" style="--h:68px" data-label="5"></i>
+          <i class="chromosome" style="--h:62px" data-label="6"></i>
+          <i class="chromosome" style="--h:57px" data-label="7"></i>
+          <i class="chromosome" style="--h:52px" data-label="8"></i>
+          <i class="chromosome" style="--h:48px" data-label="10"></i>
+          <i class="chromosome" style="--h:44px" data-label="12"></i>
+          <i class="chromosome" style="--h:100px" data-label="X"></i>
+        </div>
+        <div class="data-card card-a"><strong>Variant classification</strong>Pathogenic · VUS · Benign</div>
+        <div class="variant-panel" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <div class="signal-chart" aria-hidden="true"><i class="signal-line"></i></div>
+      </div>
+      <div class="proof">
+        <div><strong>5+ years</strong><span>Clinical applications experience</span></div>
+        <div><strong>50+</strong><span>Healthcare & business projects</span></div>
+        <div><strong>AI + Health</strong><span>Michener Institute at UHN</span></div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Science that works in the real world.</h2>
+          <p>My work sits between molecular biology, diagnostic technology, clinical education and data. I translate complex scientific systems into workflows that healthcare professionals can understand, trust and use.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><span class="number">01</span><h3>Molecular genetics</h3><p>Research experience in cytogenetics, hematologic malignancies, DNA extraction, PCR, sequencing and molecular assays.</p></article>
+          <article class="card"><span class="number">02</span><h3>Clinical diagnostics</h3><p>Implementation, validation, user training, workflow optimization and troubleshooting across hospital and laboratory settings.</p></article>
+          <article class="card"><span class="number">03</span><h3>Responsible health AI</h3><p>Building interpretable, privacy-conscious projects that connect healthcare domain knowledge with reproducible data science.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Experience</h2>
+          <p>A career grounded in laboratory science, customer-facing clinical applications and hands-on problem solving.</p>
+        </div>
+        <div class="timeline">
+          <article><time>2014–2019</time><div><h3>Clinical / Field Applications Specialist · Siemens Healthineers</h3><p>Led instrument implementation, validation, training and post-installation support across molecular diagnostics, immunoassays, chemistry, blood gas and point-of-care testing.</p></div></article>
+          <article><time>2022</time><div><h3>Volunteer Research Assistant · University of Montreal</h3><p>Supported statistical analysis, literature review, manuscript development, data collection and research documentation.</p></div></article>
+          <article><time>2023–2025</time><div><h3>Artificial Intelligence in Healthcare · The Michener Institute at UHN</h3><p>Expanded practical knowledge of health AI, data-informed care and the responsible development of healthcare technology.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Research</h2>
+          <p>Selected work in cytogenetics and myeloid malignancies, connecting chromosome-level abnormalities with clinically meaningful risk patterns.</p>
+        </div>
+        <div class="research-list">
+          <article class="research-item">
+            <small>ASPHO 2018 · Poster #730</small>
+            <div><h3>Frequency of 17p Abnormalities in Iranian Patients with Acute Myeloid Leukemia</h3><p>S. Raftari, A. Mirzaei, M. Yaghmaei and A. Ghavamzadeh · Pediatric Blood & Cancer</p></div>
+            <a href="https://onlinelibrary.wiley.com/doi/10.1002/pbc.27057" target="_blank" rel="noopener">View abstract ↗</a>
+          </article>
+          <article class="research-item">
+            <small>Master’s thesis</small>
+            <div><h3>Cytogenetic analysis of TP53, PDGFRA and JAK2 abnormalities in myeloid malignancies</h3><p>University of Tehran · MSc in Cellular and Molecular Biology / Genetics · Grade A+ (19.25/20)</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p>Portfolio work connecting molecular genetics and clinical domain expertise with public-data analysis, transparent modelling and thoughtful communication.</p>
+        </div>
+        <article class="project">
+          <div class="project-visual">
+            <div class="eyebrow">Open-access cancer genomics</div>
+            <div class="metric">200<small>TCGA-LAML patients and primary samples</small></div>
+          </div>
+          <div>
+            <div class="eyebrow">Featured public-data analysis</div>
+            <h3>AML Genomics &amp; Clinical Data Explorer</h3>
+            <p>A reproducible Python analysis of de-identified TCGA-LAML PanCancer Atlas data, examining clinical-data quality, validated somatic mutation patterns and variant classifications with responsible-use safeguards.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Cancer Genomics</span><span class="tag">TCGA</span><span class="tag">Data Quality</span><span class="tag">Jupyter</span></div>
+            <a class="button primary" href="https://aml-genomics-explorer.streamlit.app/" target="_blank" rel="noopener">Open Live Project ↗</a>
+            <a class="button secondary" href="https://github.com/SamanRaftari/aml-genomics-clinical-data-explorer" target="_blank" rel="noopener">View Repository ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-visual">
+            <div class="eyebrow">Held-out model performance</div>
+            <div class="metric">0.816<small>ROC AUC on synthetic AML data</small></div>
+          </div>
+          <div>
+            <div class="eyebrow">Featured health AI project</div>
+            <h3>Explainable AML Cytogenetic Risk Explorer</h3>
+            <p>An educational machine-learning prototype using fully synthetic data to explore how cytogenetic, molecular and laboratory variables influence an interpretable model.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">Streamlit</span><span class="tag">Explainable AI</span><span class="tag">Synthetic data</span></div>
+            <a class="button primary" href="https://aml-cytogenetic-risk-explorer.streamlit.app" target="_blank" rel="noopener">Open Live Project ↗</a>
+            <a class="button secondary" href="https://github.com/SamanRaftari/aml-risk-explorer" target="_blank" rel="noopener">View Source Code ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+  <div class="project-visual">
+    <div class="eyebrow">Transparent ISCN parsing</div>
+    <div class="metric">8/8<small>Automated parser tests passed</small></div>
+  </div>
+
+  <div>
+    <div class="eyebrow">Featured cytogenetics informatics project</div>
+    <h3>ISCN Cytogenetic Intelligence Explorer</h3>
+
+    <p>
+      A transparent Python and Streamlit prototype that parses synthetic
+      ISCN-style karyotypes into chromosome gains, losses and structural
+      events, with explainable 17p, complex and monosomal pattern flags.
+    </p>
+
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">Streamlit</span>
+      <span class="tag">Cytogenetics</span>
+      <span class="tag">ISCN</span>
+      <span class="tag">Explainable Software</span>
+      <span class="tag">Synthetic Data</span>
+    </div>
+
+    <a class="button primary" href="https://iscn-cytogenetic-explorer.streamlit.app" target="_blank" rel="noopener">Open Live Project ↗</a>
+    <a class="button secondary" href="https://github.com/SamanRaftari/iscn-cytogenetic-explorer" target="_blank" rel="noopener">View Source Code ↗</a>
+  </div>
+</article>
+
+        <article class="project">
+  <div class="project-visual">
+    <div class="eyebrow">Privacy-by-design registry engineering</div>
+    <div class="metric">180<small>Fully synthetic hematology records</small></div>
+  </div>
+
+  <div>
+    <div class="eyebrow">Featured health informatics project</div>
+    <h3>Hematology Data Quality &amp; Registry Builder</h3>
+
+    <p>
+      A privacy-by-design health-informatics prototype that transforms a
+      synthetic legacy-style hematology spreadsheet into a standardized,
+      quality-scored and analysis-ready registry.
+    </p>
+
+    <div class="tags">
+      <span class="tag">Health Informatics</span>
+      <span class="tag">Python</span>
+      <span class="tag">Streamlit</span>
+      <span class="tag">Data Quality</span>
+      <span class="tag">Privacy by Design</span>
+      <span class="tag">Synthetic Data</span>
+    </div>
+
+    <a class="button primary" href="https://hematology-registry-builder.streamlit.app" target="_blank" rel="noopener">Open Live Project ↗</a>
+    <a class="button secondary" href="https://github.com/SamanRaftari/hematology-registry-builder" target="_blank" rel="noopener">View Source Code ↗</a>
+  </div>
+</article>
+
+        <article class="project">
+  <div class="project-visual">
+    <div class="eyebrow">Cross-disease cytogenetic atlas</div>
+    <div class="metric">
+      800
+      <small>Fully synthetic hematology cases</small>
+    </div>
+  </div>
+
+  <div>
+    <div class="eyebrow">Featured molecular genetics project</div>
+    <h3>Synthetic 17p Cytogenetic Atlas</h3>
+
+    <p>
+      An interactive educational atlas exploring fictional chromosome 17p
+      patterns, co-abnormalities, and cytogenetic features across AML, ALL,
+      CML and MDS using fully synthetic data.
+    </p>
+
+    <div class="tags">
+      <span class="tag">Cytogenetics</span>
+      <span class="tag">Python</span>
+      <span class="tag">Streamlit</span>
+      <span class="tag">Data Visualization</span>
+      <span class="tag">17p Abnormalities</span>
+      <span class="tag">Synthetic Data</span>
+    </div>
+
+    <a class="button primary"
+       href="https://synthetic-17p-atlas.streamlit.app"
+       target="_blank"
+       rel="noopener">Open Live Project ↗</a>
+
+    <a class="button secondary"
+       href="https://github.com/SamanRaftari/cytogenetic-17p-atlas"
+       target="_blank"
+       rel="noopener">View Source Code ↗</a>
+  </div>
+</article>
+        
+      </div>
+    </section>
+
+    <div class="wrap" id="contact">
+  <section class="contact">
+    <div class="eyebrow">// CONTACT</div>
+    <h2>Let’s Connect</h2>
+
+    <p>
+      Open to conversations about clinical diagnostics, molecular genetics,
+      health informatics, AI in healthcare and research collaboration.
+    </p>
+
+    <div class="contact-links">
+      <a class="button secondary"
+         href="mailto:saman.raftari@yahoo.com">✉ Email</a>
+
+      <a class="button secondary"
+         href="https://www.linkedin.com/in/saman-raftari-09a23480"
+         target="_blank"
+         rel="noopener">in LinkedIn</a>
+
+      <a class="button secondary"
+         href="https://github.com/SamanRaftari"
+         target="_blank"
+         rel="noopener">{ } GitHub</a>
+    </div>
+
+    <a class="contact-email"
+       href="mailto:saman.raftari@yahoo.com">
+      saman.raftari@yahoo.com
+    </a>
+  </section>
+</div>
+    
+  </main>
+
+  <footer>
+    <div class="wrap"><span>© <span id="year"></span> Saman Raftari</span><span>Built for clarity, evidence and impact.</span></div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
