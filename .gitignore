@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Never commit raw patient-level data
+data/raw/*
+!data/raw/.gitkeep
